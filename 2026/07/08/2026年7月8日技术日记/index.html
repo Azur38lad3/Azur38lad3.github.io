@@ -1,0 +1,296 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>2026年7月8日技术日记 | AzureBlade's blog</title><meta name="author" content="AzureBlade"><meta name="copyright" content="AzureBlade"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="介绍一个个人基础的技术体系和未来的学习路线">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026年7月8日技术日记">
+<meta property="og:url" content="http://example.com/2026/07/08/2026%E5%B9%B47%E6%9C%888%E6%97%A5%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/index.html">
+<meta property="og:site_name" content="AzureBlade&#39;s blog">
+<meta property="og:description" content="介绍一个个人基础的技术体系和未来的学习路线">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/image/avatar.jpg">
+<meta property="article:published_time" content="2026-07-08T14:15:16.000Z">
+<meta property="article:modified_time" content="2026-07-08T14:42:45.827Z">
+<meta property="article:author" content="AzureBlade">
+<meta property="article:tag" content="技术日记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "2026年7月8日技术日记",
+  "url": "http://example.com/2026/07/08/2026%E5%B9%B47%E6%9C%888%E6%97%A5%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/",
+  "image": "http://example.com/image/avatar.jpg",
+  "datePublished": "2026-07-08T14:15:16.000Z",
+  "dateModified": "2026-07-08T14:42:45.827Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "AzureBlade",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/image/favicon.png"><link rel="canonical" href="http://example.com/2026/07/08/2026%E5%B9%B47%E6%9C%888%E6%97%A5%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: AzureBlade","link":"链接: ","source":"来源: AzureBlade's blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2026年7月8日技术日记',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/fontset.css"><meta name="generator" content="Hexo 8.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="web_bg" style="background-image: url(/image/index/background.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/image/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间线</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-feather"></i><span> 碎碎念</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/image/index/background.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">AzureBlade's blog</span></a><a class="nav-page-title" href="/"><span class="site-name">2026年7月8日技术日记</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间线</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-feather"></i><span> 碎碎念</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">2026年7月8日技术日记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-08T14:15:16.000Z" title="发表于 2026-07-08 22:15:16">2026-07-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-08T14:42:45.827Z" title="更新于 2026-07-08 22:42:45">2026-07-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/">技术日记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>难得有时间静下心来好好思考自己这么长久一段时间来技术学习的经历和反思一下对于未来的规划了。</p>
+<h1 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h1><p>这一年来，注意力分散是一个比较严重的问题。其实这一年来忙忙碌碌干的事情还不少，参加了各种CTF比赛和训练，研究了iot设备，中间还去搞了几个月的护网，还不间断地穿插研究大模型。来来回回的事情很多，但是真正带来的有效产出却很少，很多领域都是浅尝则止。特别在工作学习时，自己本来就是一个注意力分散的人。作为时时刻刻接触互联网的学科，有时候学着学着就开始刷会儿视频、看会儿小说；研究的课题再一分散，真正能专心做的事情可能就不多。不过零零碎碎有一点反思，可能比较混乱。</p>
+<h2 id="我对大模型的理解"><a href="#我对大模型的理解" class="headerlink" title="我对大模型的理解"></a>我对大模型的理解</h2><p><strong>浮躁</strong>是这个世界的经常性问题。最近像是Mythos、Fable5各种超级大模型的出现，网安圈是炸开了锅。振奋也好，焦虑也罢，是新突破带来的必然结果，但是这种技术带来的浮躁似乎也是必然的。<br>大模型对于网安人来说，很像之前看到的《一人之下》中马仙洪研究的修身炉一样，它可以短时间内提高一个人的技术水平，帮助你比如说复现漏洞、突破系统。“修身炉”本身没有错，错就错在想让人一步登天，让人丧失了真实感。但如果你只是无脑的使用，你所达成的这个效果并不是在你知识积累的基础上达到的，也就是像漫画中那些突然转化“异人”的普通人，没有经历真实的痛苦、汗水的打磨，永远不过只是一个过客罢了。即使有了大模型这样的工具，枯燥的计算机基本原理、底层的二进制汇编也是必须走过的路，只有经历这样真实的修炼<br>当然，我不是说不使用大模型，我只是说要以更谨慎的态度对待。具体而言，我想网安圈的人对于大模型主要还是分为两大类，第一类是应用类，第二类是目标类。我想说的要使用他、优化他且不断开发他，但是还是不能沉溺于他。特别是像很多基础都还不是很扎实的新人，在搞不清楚基本原理的情况一直埋头使用，这样对于长期技术发展和深度技术研究是不利的。</p>
+<h2 id="对目标的认识"><a href="#对目标的认识" class="headerlink" title="对目标的认识"></a>对目标的认识</h2><p>我个人认为自己注意力的分散是因为没有一个规划。自己这么久以来的研究中，一直缺乏一个方向。这一年的学习就属于逆来顺受的学习节奏，基本就是老师安排什么项目、学校安排什么活动自己就参与，有需要的就自己来学习。这种学习确实偶尔也能学到一些东西，但是就像刷短视频一样，学到的东西都是碎片化的。之前学习的感觉也是一直都是，零散的知识或许可以短期快速响应一些需求，但是难以高度融合进自己的知识体系，将自己的整体水平拔高。<br>网络安全这种学科，知识极其零散混乱，在学习的过程中真的需要区分好<strong>方向、目标和手段</strong>。方向是一个长期的研究趋势，主要就是了解你所研究对象比较全面的攻防体系，比如说研究物理网安全方向、Web中间件安全方向等；目标是稍微具体的任务，比如说在研究物联网安全的方向上，具体目标是挖掘物联网设备的漏洞；手段是一些具体的事情，比如说构建大模型辅助的漏洞挖掘这就是一种手段。今年注意力不集中的核心原因，就是没有搞清楚自己的方向，在各个方向上平均用力，没有制定具体的目标，有时候甚至把手段当成了目标。<br>仔细思考一下，自己根据导师的方向和自己的兴趣大概有两个研究方向，一是iot,二是云和虚拟化。自己对这两个方向也比较感兴趣</p>
+<h1 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h1><p>从总体而言，我可能想要形成的那种能力比较模糊。稍微仔细的思考一下，网安圈里的大神，我希望达到的高度可能是发表几篇顶刊、挖掘多少未公开漏洞、研究了多少新的trick或者是在CTF比赛上大杀四方，我所期待的轮廓大概是这样的吧。<br>但从方法论上，我认为我需要针对以下三个课题培养能力、形成方法论，以及整理一套标准的SOP：一是针对<strong>科研</strong>这个命题，要形成对一套对未知问题从分析到解决的方法论，二是<strong>漏洞挖掘</strong>这个命题，要形成对于一个系统从认识到重构再到突破的方法论；三是<strong>渗透测试</strong>的方法论，就是一步步构造攻击链路的方法论。</p>
+<p>以上的三个能力是网安人最重要的能力，针对这些能力，能做的事情就如下：</p>
+<ul>
+<li>科研能力：分析问题、阅读文献（了解研究现状）、阅读项目源码、形成解决方案</li>
+<li>漏洞挖掘能力：熟悉系统、复现漏洞、分析挖掘漏洞</li>
+<li>渗透测试：靶场训练、护网行动</li>
+<li>基础训练：CTF训练靶场、书籍博客等阅读学习<br>我认为能做的可能也就是以上几点了，具体到下一阶段的研究，具体的事情就是：</li>
+<li>科研能力：目前的idea还是以iot设备固件漏洞挖掘为主，计划是阅读firmagent并复现相关的源代码</li>
+<li>漏洞挖掘能力：反正是每周能完整地复现1-2个漏洞</li>
+<li>渗透测试能力：主要就是练习cyberstrikelabs，先把labs练完，再训练pt系列，最后是综合场景</li>
+<li>基础训练：这个任务还比较重，争取在今年强网杯之前把ctfshow的pwn和web都刷完</li>
+</ul>
+<p>还有就是学习和工作都要输入和输出结合，最好是以输出型为主。这个之前做的不好，做研究就要奔着论文去搞，挖漏洞、写工具要像做产品一样做，写笔记要像写教材一样。输出的话，还是尽量能在博客有点写作吧。把每天学的写的笔记整理一下写在博客里，再每天简单记录一下技术日记。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">AzureBlade</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/07/08/2026%E5%B9%B47%E6%9C%888%E6%97%A5%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/">http://example.com/2026/07/08/2026年7月8日技术日记/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">AzureBlade's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/">技术日记</a></div><div class="post-share"><div class="social-share" data-image="/image/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/10/26/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB/" title="二进制安全研究人员技术体系与学习规划"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">二进制安全研究人员技术体系与学习规划</div></div><div class="info-2"><div class="info-item-1">这是博客的第一篇文章，还是要比较认真对待的。作为一名二进制安全方向的爱好者和研究者，这里主要是介绍我认知下二进制安全研究人员需要构建的知识体系和学习策略，当然这也是我未来的学习路线。计算机领域的学习核心是“随机应变，动态学习”，而一个全面的知识体系就像“九阳真经”，可以帮助你快速地触类旁通。在大学的学习中，很多学校都将重点放在了理论和考试上，我认为这是国内计算机教育的悲哀。粉饰的各类数据也改变不了能力的苍白，这样培养出来的不过是一群只会夸夸其谈的白痴，不是一名真正的技术领域的开拓者和研究者。在下面的技术体系中，我会以理论知识划分，但会更强调在实践中需要达到的标准。只有追求真实的落地的技术，才能获得真正的技术带来的快乐。 技术体系构建1.底层七大件最底层的是计算机任何领域都需要的核心基础知识，结合网安的特点，我重点认为应该是“七大件”。分别是计算机体系结构、操作系统、计算机网络、数据结构与算法、编译原理、数据库原理和设计模式。 这一部分我认为每个标准都要精而且深，我认为的标准上：  计算机体系结构：可以独立在《图灵完备》的游戏上设计一个基于自己体系结构的计算机 操作系统：可以设计实...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/image/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">AzureBlade</div><div class="author-info-description">一旦舍弃个性，就和死了没有区别</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Azur38lad3"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Azur38lad3" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/JessicaSanchez4838@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客！技术、文学和生活是我博客的主题，这里是证明我生命存在的舞台。有问题请通过邮箱联系：JessicaSanchez4838@outlook.com</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%8D%E6%80%9D"><span class="toc-number">1.</span> <span class="toc-text">反思</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E5%AF%B9%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.1.</span> <span class="toc-text">我对大模型的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%9B%AE%E6%A0%87%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="toc-number">1.2.</span> <span class="toc-text">对目标的认识</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%84%E5%88%92"><span class="toc-number">2.</span> <span class="toc-text">规划</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/08/2026%E5%B9%B47%E6%9C%888%E6%97%A5%E6%8A%80%E6%9C%AF%E6%97%A5%E8%AE%B0/" title="2026年7月8日技术日记">2026年7月8日技术日记</a><time datetime="2026-07-08T14:15:16.000Z" title="发表于 2026-07-08 22:15:16">2026-07-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/26/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB/" title="二进制安全研究人员技术体系与学习规划">二进制安全研究人员技术体系与学习规划</a><time datetime="2025-10-26T00:15:16.000Z" title="发表于 2025-10-26 08:15:16">2025-10-26</time></div></div></div></div></div><div class="card-widget card-hitokoto"><div class="card-content"><div class="item-headline"><i class="fas fa-quote-left"></i><span>一言</span><div id="hitokoto">:D 获取中...</div><i id="hitofrom">:D 获取中...</i><script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script><script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script><script>fetch('https://v1.hitokoto.cn')
+  .then(function (res){
+  return res.json();
+})
+.then(function (data) {
+  var hitokoto = document.getElementById('hitokoto');
+  hitokoto.innerText = data.hitokoto;
+  var hitofrom = document.getElementById('hitofrom');
+  hitofrom.innerText = "　　　　　——" + data.from + '';
+})
+.catch(function (err) {
+  console.error(err);
+})</script></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By AzureBlade</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Azur38lad3/giscus1',
+      'data-repo-id': 'R_kgDOQKoMQg',
+      'data-category-id': 'DIC_kwDOQKoMQs4CxKZ-',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":20,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
